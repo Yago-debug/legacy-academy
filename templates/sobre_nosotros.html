@@ -1,0 +1,125 @@
+{% extends 'base.html' %}
+
+{% block title %}Sobre Nosotros - Legacy Academy{% endblock %}
+{% block description %}
+<meta name="description" content="Conoce Legacy Academy, academia de fútbol en Madrid especializada en tecnificación y alto rendimiento para niños y niñas. Descubre nuestra filosofía y patrocinadores.">
+{% endblock %}
+
+{% block content %}
+<section class="py-5 text-gold" style="background-color: rgba(0, 0, 0, 0.4);">
+  <div class="container px-4 px-md-5">
+
+    <!-- Sección ¿Quiénes somos? -->
+    <div class="row justify-content-center">
+    <div class="col-lg-10">
+        <h2 class="text-center fw-bold mb-4">¿QUIÉNES SOMOS?</h2>
+        <p>
+        Legacy Academy no es una tecnificación normal, nace para cubrir un vacío en el rigor y excelencia en los entrenos de fútbol. Legacy Academy es un entrenamiento y acompañamiento 360º, con enfoque al alto rendimiento, buscando una progresión deportiva gracias a ese enfoque completo.
+        </p>
+        <p>
+        Entrenaremos la técnica individual, así como su transferencia al juego. Daremos gran importancia a conseguir una mejora evidente de la condición física y, al mismo tiempo, trabajaremos la fortaleza mental de nuestros jugadores.
+        </p>
+        <p>
+        Confianza, seguridad en uno mismo, resiliencia, espíritu de sacrificio... Son valores que estarán presentes en nuestros entrenamientos. Además, insistiremos en que el futbolista lo es durante las 24 horas del día y debe cuidar aspectos esenciales como la alimentación y el descanso.
+        </p>
+    </div>
+    </div>
+
+    <!-- Imagen de ancho completo -->
+    <div class="container text-center mt-4">
+    <img src="{{ url_for('static', filename='images/nosotros.png') }}" 
+        class="img-fluid shadow rounded" 
+        alt="nosotros" 
+        style="max-width: 80%; height: auto; border: 2px solid #c59d5f;">
+    </div>
+
+<!-- PATROCINADORES -->
+<section class="text-gold py-5">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-5">NUESTROS PATROCINADORES</h2>
+
+    <!-- Patrocinador: Drs Rodrigo -->
+    <div class="row justify-content-center mb-4">
+      <div class="col-lg-10">
+        <div class="d-flex flex-column flex-md-row align-items-center p-4 rounded shadow-lg" style="background-color: rgba(0, 0, 0, 0.6); border: 2px solid #c59d5f;">
+          <div class="text-center me-md-4 mb-3 mb-md-0" style="flex-shrink: 0;">
+            <img src="{{ url_for('static', filename='images/DR_Rodrigo_blanco.png') }}" alt="Drs Rodrigo" class="img-fluid" style="max-height: 80px;">
+          </div>
+          <div>
+            <h5 class="fw-bold mb-2">DRS. RODRIGO</h5>
+            <p class="mb-2">
+              En la Clínica Dental Drs. Rodrigo llevamos más de 30 años cuidando sonrisas.
+              Nuestra clínica se ha convertido en una referencia de la zona, incluso para otras clínicas que nos derivan pacientes con situaciones complejas para que les podamos buscar una solución adecuada.
+            </p>
+            <a href="https://doctoresrodrigo.com/" target="_blank" class="text-gold fw-bold">Nuestra web</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Patrocinador: La Española -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="d-flex flex-column flex-md-row align-items-center p-4 rounded shadow-lg" style="background-color: rgba(0, 0, 0, 0.6); border: 2px solid #c59d5f;">
+          <div class="text-center me-md-4 mb-3 mb-md-0" style="flex-shrink: 0;">
+            <img src="{{ url_for('static', filename='images/Espanola_blanco.png') }}" alt="La Española" class="img-fluid" style="max-height: 60px;">
+          </div>
+          <div>
+            <h5 class="fw-bold mb-2">LA ESPAÑOLA – RESTAURANTE</h5>
+            <p class="mb-2">
+              El restaurante La Española de Pozuelo es un restaurante donde el lujo lo ponen los clientes y amigos. La comodidad y el servicio corren de nuestra parte.
+            </p>
+            <p class="mb-2">
+              En definitiva un restaurante donde encontramos un gusto excelente por el servicio y la calidad que vemos reflejado en cada plato. ¡Así que no te lo puedes perder!
+            </p>
+            <a href="https://restaurantelaespanola.es/" target="_blank" class="text-gold fw-bold">Nuestra web</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAPA DE LOCALIZACIÓN -->
+<section class="py-5">
+  <div class="container px-4 px-md-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="p-4 rounded shadow" style="border: 2px solid #c59d5f;">
+          <h2 class="text-center fw-bold text-gold mb-4" style="font-size: 2rem;">
+            📍 ¿DÓNDE ESTAMOS?
+          </h2>
+
+          <p class="text-center mb-3">
+            Legacy Academy se encuentra en un entorno privilegiado donde el deporte y el alto rendimiento van de la mano.
+          </p>
+
+          <p class="text-center mb-4">
+            Nos ubicamos en la <strong>Ciudad Financiera del Banco Santander</strong>, en Boadilla del Monte (Madrid).
+          </p>
+
+          <p class="text-center fw-bold">
+            <a href="https://www.google.com/maps/dir//Golf+Santander+%26+Sports+Av.+de+Ciudad+de+Santander,+s%2Fn+28660+Boadilla+del+Monte+Madrid,+Espa%C3%B1a/@40.3931515,-3.8787195,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0xd418f7155024907:0xb7076e3c4449d81a!2m2!1d-3.8787195!2d40.3931515?entry=ttu&g_ep=EgoyMDI1MDgxOC4wIKXMDSoASAFQAw%3D%3D"
+               class="text-gold text-decoration-underline"
+               target="_blank"
+               rel="noopener noreferrer">
+              → Ver ubicación en Google Maps
+            </a>
+          </p>
+
+          <div class="map-container mt-4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.354314828404!2d-3.8787195!3d40.3931515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418f7155024907%3A0xb7076e3c4449d81a!2sGolf%20Santander%20%26%20Sports!5e0!3m2!1ses!2ses!4v1692267632947!5m2!1ses!2ses"
+              width="100%" height="400" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+</section>
+{% endblock %}

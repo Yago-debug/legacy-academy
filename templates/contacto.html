@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}Contacto - Legacy Academy{% endblock %}
+{% block description %}
+<meta name="description" content="Contacta con Legacy Academy, academia de fútbol en Madrid especializada en alto rendimiento. Escríbenos para más información sobre entrenamientos y tecnificación.">
+{% endblock %}
+
+{% block content %}
+<section class="text-gold py-5" style="background-color: rgba(0, 0, 0, 0.4);">
+  <div class="container px-3 px-md-5">
+    
+    <div class="row justify-content-center mb-5">
+      <div class="col-lg-8 text-center">
+        <h2 class="fw-bold mb-4">Contacto</h2>
+        <p class="lead">¿Tienes alguna duda sobre nuestros entrenamientos de tecnificación o el programa de alto rendimiento? Escríbenos y descubre por qué somos una <strong>academia de fútbol en Madrid</strong> diferente, con un enfoque profesional para <strong>niños y niñas</strong> que quieren mejorar su nivel de <strong>fútbol masculino o femenino</strong>.</p>
+      </div>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        {% for category, message in messages %}
+          <div class="alert alert-{{ 'success' if category == 'success' else 'danger' }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+          </div>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+
+    <div class="row gy-5">
+      <!-- Formulario -->
+      <div class="col-lg-6">
+        <form action="{{ url_for('enviar_mensaje') }}" method="POST" class="bg-dark p-4 rounded shadow-lg" style="background-color: rgba(0,0,0,0.6);">
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control bg-transparent text-gold border-gold" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            <label for="nombre" class="text-gold">Nombre</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control bg-transparent text-gold border-gold" id="email" name="email" placeholder="nombre@ejemplo.com" required>
+            <label for="email" class="text-gold">Correo electrónico</label>
+          </div>
+          <div class="form-floating mb-3">
+            <textarea class="form-control bg-transparent text-gold border-gold" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" style="height: 150px;" required></textarea>
+            <label for="mensaje" class="text-gold">Mensaje</label>
+          </div>
+          <button type="submit" class="btn btn-gold mt-3 w-100">Enviar mensaje</button>
+        </form>
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="col-lg-6">
+        <div class="bg-dark p-4 rounded shadow-lg" style="background-color: rgba(0,0,0,0.6);">
+          <h4 class="fw-bold mb-4">HÁBLANOS</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3 d-flex align-items-start">
+              <i class="fas fa-envelope fa-lg me-3 mt-1"></i>
+              <span><strong>Email:</strong> info@legacyacademymadrid.com</span>
+            </li>
+            <li class="mb-3 d-flex align-items-start">
+              <i class="fas fa-phone fa-lg me-3 mt-1"></i>
+              <span><strong>Teléfono:</strong> </span>
+            </li>
+            <li class="mb-3 d-flex align-items-start">
+              <i class="fas fa-map-marker-alt fa-lg me-3 mt-1"></i>
+              <span><strong>Dirección:</strong> Golf Santander & Sports, Av. de Ciudad de Santander, s/n, 28660 Boadilla del Monte, Madrid</span>
+            </li>
+          </ul>
+
+          <p class="fw-bold">Síguenos</p>
+          <div class="d-flex flex-wrap">
+            <a href="#" class="text-gold me-3 mb-2"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#" class="text-gold me-3 mb-2"><i class="fab fa-twitter fa-lg"></i></a>
+            <a href="#" class="text-gold me-3 mb-2"><i class="fab fa-youtube fa-lg"></i></a>
+            <a href="#" class="text-gold mb-2"><i class="fab fa-linkedin fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAPA -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-12">
+        <div class="ratio ratio-16x9 border border-2 rounded" style="border-color: #c59d5f;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.825763104636!2d-3.8787195!3d40.3931515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418f7155024907%3A0xb7076e3c4449d81a!2sGolf%20Santander%20%26%20Sports!5e0!3m2!1ses!2ses!4v1694522906345!5m2!1ses!2ses" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}

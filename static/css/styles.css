@@ -1,0 +1,230 @@
+/* Fondo con imagen */
+body {
+    background-image: url('../images/entrenamiento.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    color: #c59d5f;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+}
+
+/* Superposición oscura para mejorar legibilidad */
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+}
+
+/* Tipografía */
+h2, h3, h4 {
+    font-weight: bold;
+    color: #c59d5f;
+}
+
+h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botones personalizados */
+.btn-gold {
+    background-color: #c59d5f;
+    color: #000000;
+    border: none;
+}
+
+.btn-gold:hover {
+    background-color: #a87f49;
+    color: #000000;
+}
+
+/* Imagen del logo */
+.logo {
+    max-width: 350px;
+    width: 100%;
+}
+
+/* Imágenes de pilares */
+.col-md-4 .img-fluid,
+.col-md-6 .img-fluid {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+/* Texto dentro de columnas */
+.col-md-4 p,
+.col-md-6 p {
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 5px;
+}
+
+/* Clases utilitarias */
+.text-gold {
+    color: #c59d5f;
+}
+
+.bg-gold {
+    background-color: #c59d5f;
+}
+
+/* Estilo para enlaces */
+a {
+    color: #c59d5f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover,
+a:focus {
+    color: #a87f49;
+    text-decoration: underline;
+}
+
+/* barra de navegacion */
+.navbar .nav-link {
+    color: #c59d5f !important;
+    transition: color 0.3s ease;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #f2c88d !important;
+    text-decoration: none;
+}
+
+/* Marca (Legacy Academy) */
+.navbar-brand {
+    color: #c59d5f !important;
+    text-decoration: none !important;
+}
+.navbar-brand:hover {
+    color: #f2c88d !important;
+    text-decoration: none !important;
+}
+
+/* Custom table para el calendario */
+.custom-table {
+    max-width: 800px;
+    margin: auto;
+    background-color: black;
+    color: #c59d5f;
+    border-collapse: collapse;
+    border: 1px solid #c59d5f;
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #c59d5f;
+    padding: 12px;
+    text-align: center;
+}
+
+.custom-table thead {
+    background-color: #000;
+    color: #c59d5f;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #111;
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+/* --- FORMULARIO DE CONTACTO --- */
+
+form label {
+    color: #c59d5f;
+    font-weight: 600;
+}
+
+form input,
+form textarea {
+    background-color: transparent;
+    border: 1px solid #c59d5f;
+    color: #c59d5f;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: rgba(197, 157, 95, 0.6);
+}
+
+form button {
+    background-color: #c59d5f;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+}
+
+form button:hover {
+    background-color: #a87f49;
+    color: black;
+}
+
+.contact-icons i {
+    font-size: 1.3rem;
+    color: #c59d5f;
+    margin-right: 10px;
+}
+
+.contact-icons a:hover {
+    color: #a87f49;
+}
+
+/* FORMULARIO MODERNO CON FORM-FLOATING */
+.form-control {
+  background-color: transparent;
+  border: 1px solid #c59d5f;
+  color: #c59d5f;
+}
+
+.form-control::placeholder {
+  color: rgba(197, 157, 95, 0.5);
+}
+
+.form-floating > label {
+  color: #c59d5f;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  border-color: #a87f49;
+  box-shadow: 0 0 0 0.1rem rgba(197, 157, 95, 0.25);
+  color: #c59d5f;
+}
+
+.border-gold {
+  border: 1px solid #c59d5f !important;
+}

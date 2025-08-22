@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+
+{% block title %}Inicio - Legacy Academy{% endblock %}
+{% block description %}
+<meta name="description" content="Legacy Academy es una academia de fútbol de alto rendimiento en Madrid. Entrenamientos personalizados para niños y niñas con enfoque en técnica, físico y mentalidad.">
+{% endblock %}
+
+{% block content %}
+<!-- Sección Hero -->
+<section class="text-center text-gold py-5" style="background-color: rgba(0, 0, 0, 0.4);">
+  <div class="container-fluid px-5">
+    <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo mb-4 d-block mx-auto" alt="Logo"><br> 
+    <h1 class="display-3 fw-bold">LEGACY ACADEMY</h1>
+    <h2 class="display-6 fw-bold">ELEVATE YOUR GAME</h2><br><br><br> 
+    <h2 class="display-4 fw-bold">TEMPORADA 2025 - 2026</h2><br>
+    <h2 class="display-20 fw-bold">Tecnificación orientada al alto rendimiento<br>Grupos Reducidos</h2><br>
+  </div>
+</section>
+
+
+<!-- Sobre Nosotros -->
+<section class="text-center" style="background-color: rgba(0, 0, 0, 0.4);">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <h2 class="text-center fw-bold mb-4">¿QUIÉNES SOMOS?</h2>
+      <p class="mb-3">
+        Legacy Academy es una <strong>academia de fútbol de alto rendimiento en Madrid</strong>, centrada en la <strong>tecnificación futbolística profesional</strong> para <strong>niños y niñas</strong>. Nuestro método va más allá de la escuela convencional: ofrecemos un enfoque completo, personalizado y exigente que impulsa el crecimiento real del jugador.
+      </p>
+      <p class="mb-3">
+        Nos enfocamos en la <strong>técnica individual</strong>, la <strong>preparación física específica para fútbol</strong> y una <strong>mentalidad ganadora</strong>, con <strong>entrenamientos personalizados</strong> para cada jugador. Apostamos por el desarrollo integral del futbolista, reforzando valores como la disciplina, la resiliencia, la confianza y el esfuerzo constante.
+      </p>
+      <p>
+        Nos dirigimos a familias y jugadores que buscan una <strong>academia de tecnificación de fútbol masculino y femenino</strong> con un entorno real de <strong>alto rendimiento</strong>. En Legacy Academy, formar futbolistas es solo el principio: nuestro objetivo es crear deportistas completos.
+      </p>
+    </div>
+  </div>
+
+  <!-- Imágenes alineadas horizontalmente -->
+  <div class="row justify-content-center mt-4">
+    <div class="col-md-5 mb-3 mb-md-0 text-center pe-md-1">
+      <img src="{{ url_for('static', filename='images/legacygpt0.jpeg') }}" class="img-fluid rounded shadow" alt="Legacy" style="border: 2px solid #c59d5f;">
+    </div>
+    <div class="col-md-5 text-center ps-md-1">
+      <img src="{{ url_for('static', filename='images/legacygpt1.jpeg') }}" class="img-fluid rounded shadow" alt="Legacy" style="border: 2px solid #c59d5f;"><br><br>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Alto Rendimiento -->
+<section class="py-5 text-gold" style="background-color: rgba(0, 0, 0, 0.4);">
+  <div class="container px-3 px-md-5">
+    <h2 class="mb-4 text-center">PROGRAMA DE ALTO RENDIMIENTO</h2>
+    <p>
+      En Legacy Academy ofrecemos un <strong>programa de tecnificación de fútbol</strong> orientado al <strong>alto rendimiento</strong>, diseñado para desarrollar al máximo las capacidades técnicas, físicas, tácticas y mentales de nuestros jugadores.
+    </p>
+    <p>
+      Nuestras sesiones de <strong>entrenamiento personalizado</strong> están adaptadas a cada etapa formativa y siguen una metodología basada en los estándares de las <strong>academias de fútbol profesional</strong>. Trabajamos con grupos reducidos para garantizar el progreso individual.
+    </p>
+    <p>
+      Guiados por <strong>entrenadores profesionales</strong> y un equipo multidisciplinar, nuestros jugadores mejoran su rendimiento, refuerzan su carácter y desarrollan hábitos que marcan la diferencia en el fútbol y en la vida. 
+    </p>
+    <p class="text-center">
+      Descubre nuestro plan de <strong>entrenamiento de alto rendimiento</strong> ideal para <strong>niños y niñas</strong> que buscan mejorar su nivel con una <strong>tecnificación futbolística profesional</strong>.
+    </p>
+
+    <!-- Botón centrado y responsive -->
+    <div class="text-center mt-4">
+      <a href="{{ url_for('alto_rendimiento') }}"
+         class="btn fw-bold px-4 py-2"
+         style="background-color: #c59d5f; color: black; border-radius: 5px; font-family: 'Montserrat', sans-serif; font-size: 1.1rem;">
+        Conoce todos los detalles del programa →
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Servicios / Pilares -->
+<section class="py-5" style="background-color: rgba(0, 0, 0, 0.4);">
+  <div class="container px-3">
+    <div class="row gy-5 text-white text-center">
+
+      <!-- Pilar 1 -->
+      <div class="col-12 col-md-4">
+        <div class="mb-3 rounded shadow overflow-hidden" style="height: 300px;">
+          <img src="{{ url_for('static', filename='images/fisicaL.png') }}"
+               class="w-100 h-100"
+               style="object-fit: cover;"
+               alt="Entrenamiento técnico de fútbol">
+        </div>
+        <h4 class="text-gold">PREPARACIÓN TÉCNICA</h4>
+        <p class="text-gold">
+          Mejoramos el dominio del balón mediante <strong>ejercicios técnicos de fútbol</strong>: conducción, control, pase, regate y finalización. Adaptado a cada nivel y etapa de desarrollo.
+        </p>
+      </div>
+
+      <!-- Pilar 2 -->
+      <div class="col-12 col-md-4">
+        <div class="mb-3 rounded shadow overflow-hidden" style="height: 300px;">
+          <img src="{{ url_for('static', filename='images/tecnica.jpg') }}"
+               class="w-100 h-100"
+               style="object-fit: cover;"
+               alt="Preparación física fútbol base">
+        </div>
+        <h4 class="text-gold">PREPARACIÓN FÍSICA</h4>
+        <p class="text-gold">
+          Entrenamiento enfocado en <strong>potencia, velocidad, coordinación y resistencia</strong>. Clave para mejorar el rendimiento y prevenir lesiones desde edades tempranas.
+        </p>
+      </div>
+
+      <!-- Pilar 3 -->
+      <div class="col-12 col-md-4">
+        <div class="mb-3 rounded shadow overflow-hidden" style="height: 300px;">
+          <img src="{{ url_for('static', filename='images/tactica2.jpg') }}"
+               class="w-100 h-100"
+               style="object-fit: cover;"
+               alt="Visión táctica en fútbol">
+        </div>
+        <h4 class="text-gold">PREPARACIÓN TÁCTICA</h4>
+        <p class="text-gold">
+          Desarrollamos la <strong>visión de juego</strong> y la toma de decisiones en situaciones reales. Trabajamos táctica individual y colectiva en cada sesión.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Llamada a la acción -->
+<section class="text-center text-white py-5" style="background-color: rgba(0, 0, 0, 0.4);">
+  <div class="container-fluid px-5">
+    <h2>HABLA CON NOSOTROS</h2>
+    <p class="text-gold text-center">
+      ¿Tienes dudas sobre nuestros entrenamientos o el programa de <strong>alto rendimiento</strong>? ¿Quieres más información sobre nuestra <strong>academia de tecnificación de fútbol en Madrid</strong>?
+    </p>
+    <p class="text-gold text-center">
+      Rellena nuestro formulario de <strong>contacto fútbol</strong> y te responderemos lo antes posible.
+    </p>
+    <a href="{{ url_for('contacto') }}" class="btn btn-gold mt-3">Formulario</a>
+  </div>
+</section>
+
+{% endblock %}

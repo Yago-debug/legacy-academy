@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+
+{% block title %}Alto Rendimiento - Legacy Academy{% endblock %}
+{% block description %}
+<meta name="description" content="Descubre el programa de tecnificación de fútbol y alto rendimiento de Legacy Academy en Madrid. Entrenamientos para niños y niñas que buscan desarrollar su máximo potencial físico, técnico y mental.">
+{% endblock %}
+
+{% block content %}
+<section class="py-5 text-gold" style="background-color: rgba(0, 0, 0, 0.4);">
+  <div class="container px-3 px-md-5">
+
+    <h2 class="text-center fw-bold mb-4">ALTO RENDIMIENTO</h2>
+      <p class="text-center mb-4">
+        En Legacy Academy ofrecemos un <strong>programa de tecnificación y alto rendimiento</strong> para <strong>futbolistas jóvenes</strong> que desean entrenar en un entorno exigente, profesional y enfocado al <strong>desarrollo físico, técnico y mental</strong>.
+      </p>
+      <p class="text-center mb-4">
+        Nuestro equipo de entrenadores trabaja con <strong>niños y niñas</strong> desde una metodología moderna que combina <strong>entrenamiento técnico</strong>, <strong>preparación física específica</strong> y <strong>apoyo mental</strong>, con el objetivo de elevar el rendimiento individual y colectivo.
+      </p>
+      <p class="text-center mb-4">
+        Si buscas una <strong>academia de fútbol en Madrid</strong> que realmente potencie tu evolución como futbolista, este es tu sitio.
+      </p>
+
+
+    <div class="row text-center g-4 mt-5">
+      <div class="col-md-4">
+        <div class="p-4 h-100" style="background-color: rgba(0, 0, 0, 0.4); border: 1px solid #c59d5f; border-radius: 10px;">
+          <h4 class="fw-bold mb-3">HORARIOS</h4>
+          <p class="mb-0 text-center fw-bold">Domingos<br>11:00 - 12:30</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-4 h-100" style="background-color: rgba(0, 0, 0, 0.4); border: 1px solid #c59d5f; border-radius: 10px;">
+          <h4 class="fw-bold mb-3">GRUPOS</h4>
+          <p class="mb-0 text-center fw-bold">GRUPOS POR NIVEL</p>
+          <p class="mb-0 text-center">Masculino y Femenino<br>Nacidos entre 2009 y 2016.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="p-4 h-100" style="background-color: rgba(0, 0, 0, 0.4); border: 1px solid #c59d5f; border-radius: 10px;">
+          <h4 class="fw-bold mb-3">CATEGORÍAS</h4>
+          <p class="mb-0 text-center">Benjamín</p>
+          <p class="mb-0 text-center">Alevín</p>
+          <p class="mb-0 text-center">Infantil</p>
+          <p class="mb-0 text-center">Cadete</p>
+          <p class="mb-0 text-center">Juvenil</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-center fw-bold mt-5 mb-5">CALENDARIO DE TECNIFICACIÓN</h2>
+
+    <div class="row align-items-start">
+      <!-- Calendario -->
+      <div class="col-lg-7 mb-4 mb-lg-0">
+        <div class="table-responsive">
+          <table class="custom-table w-100">
+            <thead>
+              <tr>
+                <th class="fw-bold">MES</th>
+                <th class="fw-bold">DÍAS DE TECNIFICACIÓN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="fw-bold">OCTUBRE</td><td> 3- 19 - 26</td></tr>
+              <tr><td class="fw-bold">NOVIEMBRE</td><td>16 - 23 - 30</td></tr>
+              <tr><td class="fw-bold">DICIEMBRE</td><td>14 - 21</td></tr>
+              <tr><td class="fw-bold">ENERO</td><td>11 - 18 - 25</td></tr>
+              <tr><td class="fw-bold">FEBRERO</td><td>1 - 8 - 15 - 22</td></tr>
+              <tr><td class="fw-bold">MARZO</td><td>1 - 8 - 15 - 22 - 29</td></tr>
+              <tr><td class="fw-bold">ABRIL</td><td>12 - 19 - 26</td></tr>
+              <tr><td class="fw-bold">MAYO</td><td>10 - 17 - 24 - 31</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Imagen -->
+      <div class="col-lg-5 text-center">
+        <img src="{{ url_for('static', filename='images/legacy_logo_gpt1.jpeg') }}"
+             alt="Legacy Academy"
+             class="img-fluid rounded shadow"
+             style="width: 100%; max-width: 100%; height: auto; border: 2px solid #c59d5f;">
+      </div>
+    </div>
+
+    <h2 class="text-center fw-bold mt-5">PLANES Y TARIFAS</h2>
+    <h3 class="text-center fw-bold mb-5">MATRÍCULA 100€ · INCLUYE ROPA ADIDAS + SEGURO MÉDICO</h3>
+
+    <div class="row justify-content-center g-4">
+      <!-- Plan Anual -->
+      <div class="col-md-4 col-12">
+        <div style="border: 2px solid #ffc940; border-radius: 6px; overflow: hidden; background-color: #111;">
+          <div style="background-color: #ffc940; padding: 10px;">
+            <h5 class="text-dark fw-bold m-0 text-uppercase text-center">Modalidad Anual</h5>
+          </div>
+          <div class="text-center p-3" style="color: #f2c88d;">
+            <p class="m-0 fw-bold">– MATRÍCULA GRATIS</p>
+            <p class="m-0">– 27 SESIONES</p>
+            <p class="m-0">– PAGO Único</p>
+            <p class="fs-4 fw-bold mt-3">500€</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plan Trimestral -->
+      <div class="col-md-4 col-12">
+        <div style="border: 2px solid #ffc940; border-radius: 6px; overflow: hidden; background-color: #111;">
+          <div style="background-color: #ffc940; padding: 10px;">
+            <h5 class="text-dark fw-bold m-0 text-uppercase text-center">Trimestral</h5>
+          </div>
+          <div class="text-center p-3" style="color: #f2c88d;">
+            <p class="m-0">– PAGO MATRÍCULA</p>
+            <p class="m-0">– 9 SESIONES</p>
+            <p class="m-0">– PAGO Único</p>
+            <p class="fs-4 fw-bold mt-3">200€</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bono 10 Sesiones -->
+      <div class="col-md-4 col-12">
+        <div style="border: 2px solid #ffc940; border-radius: 6px; overflow: hidden; background-color: #111;">
+          <div style="background-color: #ffc940; padding: 10px;">
+            <h5 class="text-dark fw-bold m-0 text-uppercase text-center">Bono 10 Sesiones</h5>
+          </div>
+          <div class="text-center p-3" style="color: #f2c88d;">
+            <p class="m-0">– PAGO MATRÍCULA</p>
+            <p class="m-0">– 10 SESIONES</p>
+            <p class="m-0">– PAGO Único</p>
+            <p class="fs-4 fw-bold mt-3">275€</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-center fw-bold my-5">PLAZAS LIMITADAS - GRUPOS REDUCIDOS</h2>
+
+    <!-- Carrusel de imágenes motivadoras -->
+    <section class="py-5" style="background-color: rgba(0, 0, 0, 0.85);">
+      <div class="container px-4">
+        <h2 class="text-center text-gold fw-bold mb-4">MOMENTOS QUE INSPIRAN</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10">
+            <div id="motivationalCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="8000">
+              <div class="carousel-inner rounded shadow bg-black" style="height: 800px;">
+                <div class="carousel-item active">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <img src="{{ url_for('static', filename='images/frase_carrusel1.jpeg') }}" class="img-fluid" style="max-height: 100%; object-fit: contain;" alt="Motivación 1">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <img src="{{ url_for('static', filename='images/frase_carrusel2.jpeg') }}" class="img-fluid" style="max-height: 100%; object-fit: contain;" alt="Motivación 2">
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="d-flex justify-content-center align-items-center h-100">
+                    <img src="{{ url_for('static', filename='images/frase_carrusel3.jpeg') }}" class="img-fluid" style="max-height: 100%; object-fit: contain;" alt="Motivación 3">
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#motivationalCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#motivationalCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>
+{% endblock %}
