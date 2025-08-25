@@ -79,8 +79,9 @@ def enviar_mensaje():
         return redirect(url_for('contacto'))
     except Exception as e:
         logging.error(f"Error al enviar correo desde {email}: {e}")
-        flash(f'Error técnico: {str(e)}', 'error')  # Mostrar error real
-        return redirect(url_for('contacto'))
+        flash('Hubo un problema al enviar el mensaje. Intenta de nuevo más tarde.', 'error')
+    return redirect(url_for('contacto'))
+
 
 
 # Run
