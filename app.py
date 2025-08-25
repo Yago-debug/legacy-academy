@@ -4,6 +4,8 @@ from dotenv import load_dotenv
 import os
 import re
 import logging
+import csv
+from datetime import datetime
 
 # Cargar variables de entorno desde .env
 load_dotenv()
@@ -68,19 +70,40 @@ def enviar_mensaje():
 
     # Intentar enviar el correo
     try:
+        # Crear el mensaje de correo
         msg = Message(
             subject=f'Nuevo mensaje de {nombre} desde el formulario de contacto',
             recipients=['info@legacyacademymadrid.com'],
             body=f'Nombre: {nombre}\nEmail: {email}\n\nMensaje:\n{mensaje}'
         )
+
+        # Enviar el correo usando Flask-Mail
         mail.send(msg)
+
+        # Guardar los datos del formulario en un archivo CSV
+        from datetime import datetime
+        import csv
+
+        with open('mensajes_contacto.csv', 'a', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow([
+                datetime.now().isoformat(),  # Fecha y hora del mensaje
+                nombre,                      # Nombre del remitente
+                email,                       # Correo electrónico
+                mensaje                      # Contenido del mensaje
+            ])
+
+        # Log y mensaje de éxito
         logging.info(f"Correo enviado correctamente a info@legacyacademymadrid.com desde {email}")
         flash('Mensaje enviado correctamente. ¡Gracias por contactar con nosotros!', 'success')
         return redirect(url_for('contacto'))
+
     except Exception as e:
+        # En caso de error, se registra en el log y se notifica al usuario
         logging.error(f"Error al enviar correo desde {email}: {e}")
         flash('Hubo un problema al enviar el mensaje. Intenta de nuevo más tarde.', 'error')
-    return redirect(url_for('contacto'))
+        return redirect(url_for('contacto'))
+
 
 
 
