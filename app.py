@@ -79,11 +79,9 @@ def enviar_mensaje():
         return redirect(url_for('contacto'))
     except Exception as e:
         logging.error(f"Error al enviar correo desde {email}: {e}")
-        if os.getenv("FLASK_ENV") != "production":
-            flash(f'Error técnico: {str(e)}', 'error')
-        else:
-            flash('Hubo un problema al enviar el mensaje. Intenta de nuevo más tarde.', 'error')
+        flash(f'Error técnico: {str(e)}', 'error')  # Mostrar error real
         return redirect(url_for('contacto'))
+
 
 # Run
 if __name__ == '__main__' and os.getenv("FLASK_ENV") != "production":
