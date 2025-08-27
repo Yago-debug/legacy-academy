@@ -65,15 +65,23 @@
       Descubre nuestro plan de <strong>entrenamiento de alto rendimiento</strong> ideal para <strong>niños y niñas</strong> que buscan mejorar su nivel con una <strong>tecnificación futbolística profesional</strong>.
     </p>
 
-    <!-- Botón centrado y responsive -->
-    <div class="text-center mt-4">
+   <!-- Botón centrado y responsive -->
+   <!-- Botón centrado y responsive con colores invertidos -->
+    <div class="text-center mt-4 d-flex flex-column flex-md-row justify-content-center align-items-center gap-3">
+      <!-- Botón 1: fondo dorado -->
       <a href="{{ url_for('alto_rendimiento') }}"
-         class="btn fw-bold px-4 py-2"
-         style="background-color: #c59d5f; color: black; border-radius: 5px; font-family: 'Montserrat', sans-serif; font-size: 1.1rem;">
+        class="btn fw-bold px-4 py-2"
+        style="background-color: #c59d5f; color: black; border-radius: 5px; font-family: 'Montserrat', sans-serif; font-size: 1.1rem;">
         Conoce todos los detalles del programa →
       </a>
+
+      <!-- Botón 2: fondo negro, texto dorado -->
+      <a href="{{ url_for('sobre_nosotros') }}"
+        class="btn fw-bold px-4 py-2"
+        style="background-color: black; color: #c59d5f; border: 2px solid #c59d5f; border-radius: 5px; font-family: 'Montserrat', sans-serif; font-size: 1.1rem;">
+        Conoce más sobre nosotros →
+      </a>
     </div>
-  </div>
 </section>
 
 
