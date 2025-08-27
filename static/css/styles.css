@@ -228,3 +228,26 @@ form button:hover {
 .border-gold {
   border: 1px solid #c59d5f !important;
 }
+
+/* MINIATURAS DE VÍDEO - LEGACY ACADEMY */
+.video-thumb-wrapper {
+  border: 2px solid #c59d5f;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(197, 157, 95, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.video-thumb-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-thumb-wrapper:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(197, 157, 95, 0.9);
+}
+

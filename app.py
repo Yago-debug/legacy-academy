@@ -110,6 +110,6 @@ def enviar_mensaje():
 # Run
 if __name__ == '__main__' and os.getenv("FLASK_ENV") != "production":
     debug_mode = os.getenv("FLASK_DEBUG", "False").lower() == "true"
-    app.run(debug=debug_mode)
+    app.run(debug=debug_mode, port=5001)
 
 
