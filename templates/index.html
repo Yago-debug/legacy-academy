@@ -150,4 +150,47 @@
   </div>
 </section>
 
+<footer class="mt-5 py-4" style="background-color: rgba(0, 0, 0, 0.6);">
+  <div class="container">
+    <div class="row justify-content-between align-items-center text-center text-md-start">
+
+      <!-- Columna 1: Contacto -->
+      <div class="col-md-4 mb-3 mb-md-0">
+        <strong class="text-gold">LEGACY ACADEMY</strong><br>
+        📍 Boadilla del Monte, Madrid &nbsp;&nbsp;
+        <a href="mailto:info@legacyacademymadrid.com" class="text-gold text-decoration-none">info@legacyacademymadrid.com</a>
+      </div>
+
+      <!-- Columna 2: Enlaces rápidos -->
+      <div class="col-md-4 mb-3 mb-md-0 d-flex justify-content-center align-items-center">
+        <div class="footer-links text-center">
+          <span class="footer-link"><a href="{{ url_for('inicio') }}">Inicio</a></span>
+          <span class="footer-separator">|</span>
+          <span class="footer-link"><a href="{{ url_for('alto_rendimiento') }}">Alto Rendimiento</a></span>
+          <span class="footer-separator">|</span>
+          <span class="footer-link"><a href="{{ url_for('sobre_nosotros') }}">Sobre Nosotros</a></span>
+          <span class="footer-separator">|</span>
+          <span class="footer-link"><a href="{{ url_for('contacto') }}">Contacto</a></span>
+        </div>
+      </div>
+
+
+
+      <!-- Columna 3: Instagram -->
+      <div class="col-md-4 text-md-end text-center">
+        <a href="https://instagram.com/legacy_academy_madrid" target="_blank" class="text-gold text-decoration-none">
+          <i class="fab fa-instagram me-2"></i>Instagram
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Línea inferior -->
+    <div class="text-center mt-3" style="font-size: 0.9rem; color: #999;">
+      &copy; 2025 Legacy Academy. Todos los derechos reservados.
+    </div>
+  </div>
+</footer>
+
+
 {% endblock %}
