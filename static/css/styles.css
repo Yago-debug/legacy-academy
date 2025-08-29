@@ -271,3 +271,25 @@ form button:hover {
   color: #c59d5f;
   font-size: 1rem;
 }
+
+.footer-social .instagram-link {
+  font-size: 1.4rem; /* Más grande */
+  color: #c59d5f;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social .instagram-link:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-social .instagram-link {
+    font-size: 1.6rem; /* Incluso más grande en móvil */
+    justify-content: center;
+  }
+}
