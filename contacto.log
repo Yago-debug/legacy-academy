@@ -2928,3 +2928,20 @@
 2025-08-28 16:56:41,387 - INFO - 127.0.0.1 - - [28/Aug/2025 16:56:41] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
 2025-08-28 16:56:41,391 - INFO - 127.0.0.1 - - [28/Aug/2025 16:56:41] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
 2025-08-28 16:56:41,416 - INFO - 127.0.0.1 - - [28/Aug/2025 16:56:41] "[36mGET /static/images/entrenamiento.jpg HTTP/1.1[0m" 304 -
+2025-08-29 09:05:16,643 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-08-29 09:05:16,643 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-29 09:05:16,644 - INFO -  * Restarting with stat
+2025-08-29 09:05:16,770 - WARNING -  * Debugger is active!
+2025-08-29 09:05:16,796 - INFO -  * Debugger PIN: 846-476-251
+2025-08-29 09:05:17,309 - INFO - 127.0.0.1 - - [29/Aug/2025 09:05:17] "GET /contacto HTTP/1.1" 200 -
+2025-08-29 09:05:17,328 - INFO - 127.0.0.1 - - [29/Aug/2025 09:05:17] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-08-29 09:05:17,333 - INFO - 127.0.0.1 - - [29/Aug/2025 09:05:17] "GET /static/images/entrenamiento.jpg HTTP/1.1" 200 -
+2025-08-29 09:05:20,635 - INFO - 127.0.0.1 - - [29/Aug/2025 09:05:20] "GET / HTTP/1.1" 200 -
+2025-08-29 09:05:20,662 - INFO - 127.0.0.1 - - [29/Aug/2025 09:05:20] "[36mGET /static/css/styles.css HTTP/1.1[0m" 304 -
+2025-08-29 09:05:20,669 - INFO - 127.0.0.1 - - [29/Aug/2025 09:05:20] "GET /static/images/tecnica.jpg HTTP/1.1" 200 -
+2025-08-29 09:05:20,670 - INFO - 127.0.0.1 - - [29/Aug/2025 09:05:20] "[36mGET /static/images/logo.png HTTP/1.1[0m" 304 -
+2025-08-29 09:05:20,678 - INFO - 127.0.0.1 - - [29/Aug/2025 09:05:20] "GET /static/images/fisicaL.png HTTP/1.1" 200 -
+2025-08-29 09:05:20,676 - INFO - 127.0.0.1 - - [29/Aug/2025 09:05:20] "[36mGET /static/images/legacygpt0.jpeg HTTP/1.1[0m" 304 -
+2025-08-29 09:05:20,674 - INFO - 127.0.0.1 - - [29/Aug/2025 09:05:20] "[36mGET /static/images/legacygpt1.jpeg HTTP/1.1[0m" 304 -
+2025-08-29 09:05:20,680 - INFO - 127.0.0.1 - - [29/Aug/2025 09:05:20] "GET /static/images/tactica2.jpg HTTP/1.1" 200 -
