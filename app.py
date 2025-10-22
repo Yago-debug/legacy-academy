@@ -75,10 +75,10 @@ def enviar_mensaje():
     nombre_lower = nombre.lower()
     mensaje_lower = mensaje.lower()
 
-if nombre_lower in spam_nombres or any(token in mensaje_lower for token in spam_idiomas):
-    logging.warning(f"Mensaje bloqueado por sospecha de SPAM - Nombre: {nombre}, Email: {email}")
-    flash('Mensaje bloqueado por sospecha de SPAM.', 'error')
-    return redirect(url_for('contacto'))
+    if nombre_lower in spam_nombres or any(token in mensaje_lower for token in spam_idiomas):
+        logging.warning(f"Mensaje bloqueado por sospecha de SPAM - Nombre: {nombre}, Email: {email}")
+        flash('Mensaje bloqueado por sospecha de SPAM.', 'error')
+        return redirect(url_for('contacto'))
 
     # Intentar enviar el correo
     try:
