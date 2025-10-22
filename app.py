@@ -67,6 +67,18 @@ def enviar_mensaje():
         flash('El correo electrónico no es válido.', 'error')
         logging.warning(f"Correo inválido: {email}")
         return redirect(url_for('contacto'))
+    
+    # Filtro antispam básico
+    spam_nombres = ['leetak']
+    spam_idiomas = ['szia', 'こんにちは', '你好', 'হাই', 'মিন্ডা', 'है', 'привет', 'γεια', '안녕', 'مرحبا', 'سلام']
+
+    nombre_lower = nombre.lower()
+    mensaje_lower = mensaje.lower()
+
+if nombre_lower in spam_nombres or any(token in mensaje_lower for token in spam_idiomas):
+    logging.warning(f"Mensaje bloqueado por sospecha de SPAM - Nombre: {nombre}, Email: {email}")
+    flash('Mensaje bloqueado por sospecha de SPAM.', 'error')
+    return redirect(url_for('contacto'))
 
     # Intentar enviar el correo
     try:
