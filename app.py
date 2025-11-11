@@ -110,9 +110,11 @@ def enviar_mensaje():
         flash('Mensaje enviado correctamente. ¡Gracias por contactar con nosotros!', 'success')
         return redirect(url_for('contacto'))
 
+
     except Exception as e:
         # En caso de error, se registra en el log y se notifica al usuario
         logging.error(f"Error al enviar correo desde {email}: {e}")
+        print(f"❌ ERROR al enviar correo: {e}")  # TEMPORAL: para ver el error en consola de desarrollo
         flash('Hubo un problema al enviar el mensaje. Intenta de nuevo más tarde.', 'error')
         return redirect(url_for('contacto'))
 
